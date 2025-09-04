@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Check-In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="welcome">💙 Welcome to Your Mental Health Check-In</h1>
+  <p>Click the title to change it!</p>
+
+  <!-- Mood Tracker -->
+  <section>
+    <h2>How are you feeling today?</h2>
+    <button class="mood-btn">Happy</button>
+    <button class="mood-btn">Sad</button>
+    <button class="mood-btn"> Stressed</button>
+    <p id="mood-response"></p>
+  </section>
+
+  <!-- Daily Tip -->
+  <section>
+    <h2>Mental Health Tip</h2>
+    <button id="toggle-tip">Show/Hide Tip</button>
+    <p id="tip" style="display:none;">Take a short walk today and breathe deeply. 🌿</p>
+  </section>
+
+  <!-- Journal Form -->
+  <section>
+    <h2>Write Your Thoughts</h2>
+    <form id="journal-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br>
+
+      <label for="entry">Journal Entry:</label>
+      <textarea id="entry" required></textarea><br>
+
+      <button type="submit">Save Entry</button>
+    </form>
+    <p id="form-message"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
